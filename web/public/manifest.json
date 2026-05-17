@@ -1,0 +1,22 @@
+{
+  "name": "Ateneo Croata",
+  "short_name": "Ateneo Croata",
+  "description": "Cultura, comunidad y conexión entre Argentina y Croacia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F2F1",
+  "theme_color": "#7A2E3B",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "/logos/logo-icon-bordo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logos/logo-icon-bordo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

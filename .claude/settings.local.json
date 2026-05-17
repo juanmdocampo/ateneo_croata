@@ -10,7 +10,10 @@
       "Bash(sed 's/<[^>]*>//g')",
       "Bash(unzip -p \"Web estética.docx\" word/document.xml)",
       "Bash(cd \"/c/Users/juanmanuel.docampo/Documents/ateneo_croata\" && find . -name \"*.json\" -o -name \"next.config.*\" -o -name \".nextrc*\" 2>/dev/null | grep -v \".git\")",
-      "Read(//c/c/Users/juanmanuel.docampo/Documents/**)"
+      "Read(//c/c/Users/juanmanuel.docampo/Documents/**)",
+      "Bash(npx create-next-app@latest web --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git --yes)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
     ]
   }
 }

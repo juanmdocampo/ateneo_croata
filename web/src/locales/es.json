@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "sobre": "Sobre Ateneo",
+    "programas": "Programas",
+    "comunidad": "Comunidad",
+    "recursos": "Recursos",
+    "contacto": "Contacto",
+    "cta": "Hacete Socio",
+    "lang": "HR"
+  },
+  "hero": {
+    "title": "ATENEO\nCROATA",
+    "subtitle": "Cultura, comunidad y conexión entre Argentina y Croacia.",
+    "text": "Creamos encuentros, proyectos y redes para acercar personas a la cultura croata desde un lugar contemporáneo, profesional y abierto.",
+    "cta1": "Explorar programas",
+    "cta2": "Hacete socio"
+  },
+  "intro": {
+    "eyebrow": "Croatizar es acercar",
+    "title": "Croatizar es crear puentes entre personas, generaciones y culturas.",
+    "text1": "En Ateneo Croata creemos que la cultura no se hereda solamente: también se comparte, se descubre y se construye.",
+    "text2": "Por eso usamos una palabra inventada."
+  },
+  "dict": {
+    "word1": "croatizar",
+    "pos1": "verbo transitivo",
+    "def1": "Acto de acercar, interesar o apasionar a las personas por la cultura croata.",
+    "etym1_label": "Etimología:",
+    "etym1": "De «Croacia» (lat. Croatia, del eslavo Hrvati) + sufijo «-izar».",
+    "word2": "hrvatizirati",
+    "pos2": "glagol prijelazni",
+    "def2": "Čin poticanja ljudi da se približe, zainteresiraju ili oduševe hrvatskom kulturom.",
+    "etym2_label": "Etimologija:",
+    "etym2": "Od «Hrvat» + sufiks «-izirati».",
+    "closing": "En Ateneo Croata creemos que no existe una única manera de acercarse a Croacia. Croatizar es crear puentes entre personas y culturas."
+  },
+  "about": {
+    "eyebrow": "Quiénes somos",
+    "title": "Una comunidad cultural abierta",
+    "text1": "Ateneo Croata es una asociación civil y plataforma cultural contemporánea nacida en Rosario, Argentina.",
+    "text2": "Desarrollamos actividades, proyectos y redes que conectan personas con Croacia desde un lugar actual, participativo y cercano.",
+    "highlight": "No hace falta ser croata para ser parte.",
+    "text3": "Puede sumarse cualquier persona con interés, cariño o curiosidad por Croacia y su cultura."
+  },
+  "programs": {
+    "eyebrow": "Nuestros programas",
+    "title": "Formas de encontrarnos con Croacia",
+    "cards": [
+      {
+        "id": "kavu",
+        "name": "Idemo na kavu",
+        "subtitle": "Cultura alrededor del café",
+        "text": "Encuentros culturales, conversaciones y actividades que usan el café como punto de partida para conectar personas e ideas. Charlas, networking y comunidad en un formato relajado y contemporáneo."
+      },
+      {
+        "id": "skola",
+        "name": "Mala škola",
+        "subtitle": "Primeros encuentros con Croacia",
+        "text": "Un espacio pensado para infancias y familias donde presentamos el idioma, la cultura y las tradiciones croatas de manera cercana y creativa. A través de juegos, lecturas y actividades, las nuevas generaciones descubren Croacia desde la curiosidad y el afecto."
+      },
+      {
+        "id": "vino",
+        "name": "Rujno vino",
+        "subtitle": "Cultura enológica croata",
+        "text": "Charlas, degustaciones y experiencias alrededor de la tradición vitivinícola croata. Vinos, quesos, licores y gastronomía como forma de encuentro cultural y conversación compartida."
+      },
+      {
+        "id": "sveti",
+        "name": "Svi Sveti",
+        "subtitle": "Memoria, patrimonio y comunidad",
+        "text": "Una propuesta declarada de interés cultural por el Concejo de la Ciudad de Rosario que recupera tradiciones croatas vinculadas al Día de Todos los Santos. A través de recorridos y encuentros abiertos, exploramos la memoria de la inmigración croata en Argentina."
+      }
+    ]
+  },
+  "support": {
+    "eyebrow": "Red de apoyo",
+    "title": "Acompañamos proyectos, personas e instituciones",
+    "text": "Creemos en compartir herramientas y tender puentes.",
+    "list": [
+      "Migrantes",
+      "Estudiantes",
+      "Becarios",
+      "Asociaciones",
+      "Referentes culturales",
+      "Proyectos comunitarios"
+    ],
+    "extra": "Brindamos orientación, asesoramiento y acompañamiento en programas, becas, subsidios y oportunidades vinculadas con Croacia.",
+    "translations": "También realizamos traducciones oficiales gratuitas para migrantes y becados."
+  },
+  "talks": {
+    "eyebrow": "Charlas y difusión",
+    "title": "Compartir conocimiento también es construir comunidad",
+    "text": "Realizamos charlas presenciales, híbridas y virtuales para acercar información clara y accesible a nuevas generaciones y comunidades de toda Sudamérica.",
+    "list": [
+      "Programas para la diáspora",
+      "Becas y oportunidades educativas",
+      "Idioma croata",
+      "Identidad y cultura",
+      "Actualidad croata"
+    ]
+  },
+  "congress": {
+    "eyebrow": "Congresos e investigación",
+    "title": "Cultura, investigación y difusión",
+    "text1": "Participamos activamente en proyectos culturales, investigaciones y congresos vinculados a la inmigración croata y las conexiones entre Argentina y Croacia.",
+    "text2": "Trabajamos junto a instituciones, investigadores y organizaciones de ambos países para preservar, estudiar y difundir la historia y la cultura croata contemporánea."
+  },
+  "member": {
+    "eyebrow": "Hacete socio",
+    "title": "No hace falta ser croata para ser parte",
+    "text": "Ateneo Croata es una comunidad abierta para quienes sienten curiosidad, cariño o interés por Croacia y su cultura. Queremos construir espacios más humanos, contemporáneos y participativos.",
+    "cta": "Quiero sumarme"
+  },
+  "partners": {
+    "eyebrow": "Nos acompañan",
+    "title": "Instituciones y organizaciones que creen en el proyecto"
+  },
+  "footer": {
+    "tagline": "Cultura, comunidad y conexión entre Argentina y Croacia.",
+    "nav_title": "Navegación",
+    "contact_title": "Contacto",
+    "institutional": "Proyecto realizado con el apoyo del Središnji državni ured za Hrvate izvan Republike Hrvatske.",
+    "copyright": "© 2025 Ateneo Croata — Todos los derechos reservados.",
+    "location": "Rosario, Santa Fe, Argentina"
+  }
+}

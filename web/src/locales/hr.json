@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "inicio": "Početna",
+    "sobre": "O Ateneu",
+    "programas": "Programi",
+    "comunidad": "Zajednica",
+    "recursos": "Resursi",
+    "contacto": "Kontakt",
+    "cta": "Postani Član",
+    "lang": "ES"
+  },
+  "hero": {
+    "title": "ATENEO\nCROATA",
+    "subtitle": "Kultura, zajednica i veza između Argentine i Hrvatske.",
+    "text": "Stvaramo susrete, projekte i mreže za povezivanje ljudi s hrvatskom kulturom na suvremen, profesionalan i otvoren način.",
+    "cta1": "Istražite programe",
+    "cta2": "Postani član"
+  },
+  "intro": {
+    "eyebrow": "Hrvatizirati znači približiti",
+    "title": "Hrvatizirati znači graditi mostove između ljudi, generacija i kultura.",
+    "text1": "U Ateneo Croata vjerujemo da se kultura ne nasljeđuje samo: također se dijeli, otkriva i gradi.",
+    "text2": "Zato koristimo izmišljenu riječ."
+  },
+  "dict": {
+    "word1": "croatizar",
+    "pos1": "verbo transitivo",
+    "def1": "Acto de acercar, interesar o apasionar a las personas por la cultura croata.",
+    "etym1_label": "Etimología:",
+    "etym1": "De «Croacia» (lat. Croatia, del eslavo Hrvati) + sufijo «-izar».",
+    "word2": "hrvatizirati",
+    "pos2": "glagol prijelazni",
+    "def2": "Čin poticanja ljudi da se približe, zainteresiraju ili oduševe hrvatskom kulturom.",
+    "etym2_label": "Etimologija:",
+    "etym2": "Od «Hrvat» + sufiks «-izirati».",
+    "closing": "U Ateneo Croata vjerujemo da ne postoji jedan jedini način približavanja Hrvatskoj. Hrvatizirati znači graditi mostove između ljudi i kultura."
+  },
+  "about": {
+    "eyebrow": "Tko smo",
+    "title": "Otvorena kulturna zajednica",
+    "text1": "Ateneo Croata je civilna udruga i suvremena kulturna platforma nastala u Rosariju, Argentina.",
+    "text2": "Razvijamo aktivnosti, projekte i mreže koje povezuju ljude s Hrvatskom na aktualan, participativan i blizak način.",
+    "highlight": "Nije potrebno biti Hrvat da bi se pridružili.",
+    "text3": "Može se pridružiti svaka osoba s interesom, ljubavlju ili radoznalošću prema Hrvatskoj i njenoj kulturi."
+  },
+  "programs": {
+    "eyebrow": "Naši programi",
+    "title": "Načini susreta s Hrvatskom",
+    "cards": [
+      {
+        "id": "kavu",
+        "name": "Idemo na kavu",
+        "subtitle": "Kultura uz kavu",
+        "text": "Kulturni susreti, razgovori i aktivnosti koje koriste kavu kao polazišnu točku za povezivanje ljudi i ideja. Predavanja, umrežavanje i zajednica u opuštenom i suvremenom formatu."
+      },
+      {
+        "id": "skola",
+        "name": "Mala škola",
+        "subtitle": "Prvi susreti s Hrvatskom",
+        "text": "Prostor zamišljen za djecu i obitelji gdje predstavljamo jezik, kulturu i tradicije na blizak i kreativan način. Kroz igre, čitanja i aktivnosti, nove generacije otkrivaju Hrvatsku s radoznalošću i ljubavlju."
+      },
+      {
+        "id": "vino",
+        "name": "Rujno vino",
+        "subtitle": "Hrvatska enološka kultura",
+        "text": "Predavanja, degustacije i iskustva vezana uz hrvatsku vinogradarsku tradiciju. Vina, sirevi, likeri i gastronomija kao oblik kulturnog susreta i zajedničkog razgovora."
+      },
+      {
+        "id": "sveti",
+        "name": "Svi Sveti",
+        "subtitle": "Sjećanje, baština i zajednica",
+        "text": "Kulturni projekt proglašen od kulturnog interesa koji oživljava hrvatske tradicije vezane uz Sve Svete. Kroz šetnje i otvorene susrete istražujemo sjećanje na hrvatsku imigraciju u Argentini."
+      }
+    ]
+  },
+  "support": {
+    "eyebrow": "Mreža podrške",
+    "title": "Podržavamo projekte, ljude i institucije",
+    "text": "Vjerujemo u dijeljenje alata i gradnju mostova.",
+    "list": [
+      "Migranti",
+      "Studenti",
+      "Stipendisti",
+      "Udruge",
+      "Kulturni referenti",
+      "Zajednički projekti"
+    ],
+    "extra": "Pružamo usmjeravanje, savjetovanje i potporu za programe, stipendije i prilike vezane uz Hrvatsku.",
+    "translations": "Također obavljamo besplatne službene prijevode za migrante i stipendiste."
+  },
+  "talks": {
+    "eyebrow": "Predavanja i širenje znanja",
+    "title": "Dijeljenje znanja također gradi zajednicu",
+    "text": "Organiziramo predavanja uživo, hibridna i virtualna kako bismo jasne i dostupne informacije prenijeli novim generacijama i zajednicama diljem Južne Amerike.",
+    "list": [
+      "Programi za dijasporu",
+      "Stipendije i obrazovne prilike",
+      "Hrvatski jezik",
+      "Identitet i kultura",
+      "Aktualna zbivanja u Hrvatskoj"
+    ]
+  },
+  "congress": {
+    "eyebrow": "Kongresi i istraživanje",
+    "title": "Kultura, istraživanje i širenje znanja",
+    "text1": "Aktivno sudjelujemo u kulturnim projektima, istraživanjima i kongresima vezanim uz hrvatsku imigraciju i veze između Argentine i Hrvatske.",
+    "text2": "Surađujemo s institucijama, istraživačima i organizacijama obiju zemalja kako bismo sačuvali, proučili i širili povijest i suvremenu hrvatsku kulturu."
+  },
+  "member": {
+    "eyebrow": "Postani član",
+    "title": "Nije potrebno biti Hrvat da bi se pridružili",
+    "text": "Ateneo Croata je otvorena zajednica za one koji osjećaju znatiželju, ljubav ili interes prema Hrvatskoj i njenoj kulturi. Želimo graditi humanije, suvremenije i participativnije prostore.",
+    "cta": "Želim se pridružiti"
+  },
+  "partners": {
+    "eyebrow": "Naši partneri",
+    "title": "Institucije i organizacije koje vjeruju u projekt"
+  },
+  "footer": {
+    "tagline": "Kultura, zajednica i veza između Argentine i Hrvatske.",
+    "nav_title": "Navigacija",
+    "contact_title": "Kontakt",
+    "institutional": "Projekt realiziran uz potporu Središnjeg državnog ureda za Hrvate izvan Republike Hrvatske.",
+    "copyright": "© 2025 Ateneo Croata — Sva prava pridržana.",
+    "location": "Rosario, Santa Fe, Argentina"
+  }
+}
