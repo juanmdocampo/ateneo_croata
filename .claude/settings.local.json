@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\juanmanuel.docampo\\\\Documents\\\\ateneo_croata\" -Recurse -Force)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(unzip -l \"Web Info.docx\")",
+      "Bash(unzip -p \"Web Info.docx\" word/document.xml)",
+      "Bash(sed 's/<[^>]*>//g')",
+      "Bash(unzip -p \"Web estética.docx\" word/document.xml)",
+      "Bash(cd \"/c/Users/juanmanuel.docampo/Documents/ateneo_croata\" && find . -name \"*.json\" -o -name \"next.config.*\" -o -name \".nextrc*\" 2>/dev/null | grep -v \".git\")",
+      "Read(//c/c/Users/juanmanuel.docampo/Documents/**)"
+    ]
+  }
+}
