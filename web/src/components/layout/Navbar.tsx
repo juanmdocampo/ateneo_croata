@@ -7,9 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const NAV_LINKS = [
   { key: 'inicio' as const, href: '#inicio' },
-  { key: 'sobre' as const, href: '#sobre' },
+  { key: 'croatizar' as const, href: '#croatizar' },
   { key: 'programas' as const, href: '#programas' },
-  { key: 'comunidad' as const, href: '#comunidad' },
   { key: 'recursos' as const, href: '#recursos' },
   { key: 'contacto' as const, href: '#contacto' },
 ]

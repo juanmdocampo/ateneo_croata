@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { useLanguage } from '@/context/LanguageContext'
 
 const NAV_LINKS = [
-  { key: 'sobre' as const, href: '#sobre' },
+  { key: 'inicio' as const, href: '#inicio' },
+  { key: 'croatizar' as const, href: '#croatizar' },
   { key: 'programas' as const, href: '#programas' },
-  { key: 'comunidad' as const, href: '#comunidad' },
   { key: 'recursos' as const, href: '#recursos' },
   { key: 'contacto' as const, href: '#contacto' },
 ]

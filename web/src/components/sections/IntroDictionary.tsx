@@ -10,7 +10,7 @@ export default function IntroDictionary() {
   const { t } = useLanguage()
 
   return (
-    <section id="sobre" className="bg-warm-white">
+    <section id="croatizar" className="bg-warm-white">
       {/* Dictionary block */}
       <div className="bg-warm-white border-t border-warm-gray-2">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
