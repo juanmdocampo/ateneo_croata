@@ -51,7 +51,7 @@ export default function Navbar() {
                 alt="Ateneo Croata"
                 width={160}
                 height={60}
-                className="h-10 w-auto object-contain"
+                className="h-32 w-auto object-contain"
                 priority
               />
             </a>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 alt="Ateneo Croata"
                 width={160}
                 height={60}
-                className="h-10 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <nav className="flex flex-col px-8 pt-8 gap-1 flex-1">
