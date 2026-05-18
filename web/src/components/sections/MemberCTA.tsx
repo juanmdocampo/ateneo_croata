@@ -72,7 +72,7 @@ export default function MemberCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              href={`https://wa.me/5493412021771?text=${encodeURIComponent('Hola, quiero sumarme a Ateneo Croata')}`}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdByHO-gEr2UfLfnX3y-vWhGoGhmaX_Dh_Y4rG1C1yaUsQKEQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-bordo text-sm font-sans font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-[1.03] hover:shadow-lg active:scale-[0.98]"

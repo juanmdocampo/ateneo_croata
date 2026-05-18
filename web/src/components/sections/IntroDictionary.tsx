@@ -10,46 +10,7 @@ export default function IntroDictionary() {
   const { t } = useLanguage()
 
   return (
-    <section id="sobre" className="bg-warm-gray">
-      {/* Intro block */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-          <motion.div
-            variants={fadeUp}
-            custom={0}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-bordo mb-6">
-              {t.intro.eyebrow}
-            </p>
-            <h2
-              className="font-serif font-light text-text leading-[1.1]"
-              style={{ fontSize: 'clamp(2rem, 4vw, 3.25rem)' }}
-            >
-              {t.intro.title}
-            </h2>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col gap-5 lg:pt-16"
-            variants={fadeUp}
-            custom={1}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <p className="font-sans text-base text-text-soft leading-relaxed">
-              {t.intro.text1}
-            </p>
-            <p className="font-serif italic text-lg text-text-soft">
-              {t.intro.text2}
-            </p>
-          </motion.div>
-        </div>
-      </div>
-
+    <section id="sobre" className="bg-warm-white">
       {/* Dictionary block */}
       <div className="bg-warm-white border-t border-warm-gray-2">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
