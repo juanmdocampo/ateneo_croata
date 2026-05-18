@@ -64,8 +64,8 @@ export default function Hero() {
 
           {/* Title */}
           <motion.h1
-            className="font-serif font-light text-white leading-[0.95] mb-8"
-            style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
+            className="font-serif font-light text-white leading-[0.95] mb-10"
+            style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}
             custom={1}
             variants={fadeUp}
             initial="hidden"
@@ -89,15 +89,17 @@ export default function Hero() {
           </motion.p>
 
           {/* Body text */}
-          <motion.p
-            className="font-sans text-sm text-white/50 leading-relaxed mb-10 max-w-md"
+          <motion.div
+            className="font-sans text-sm text-white/55 leading-relaxed mb-10 max-w-md space-y-4"
             custom={3}
             variants={fadeUp}
             initial="hidden"
             animate="visible"
           >
-            {t.hero.text}
-          </motion.p>
+            {t.hero.text.split('\n\n').map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
