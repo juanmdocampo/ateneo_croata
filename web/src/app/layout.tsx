@@ -109,7 +109,7 @@ const jsonLd = {
       '@id': 'https://ateneocroata.com.ar/#organization',
       name: 'Ateneo Croata',
       url: 'https://ateneocroata.com.ar',
-      logo: 'https://ateneocroata.com.ar/logos/logo-bordo-text.jpeg',
+      logo: 'https://ateneocroata.com.ar/logos/logo_oficial.png',
       description:
         'Asociación civil y plataforma cultural contemporánea de Rosario, Argentina.',
       address: {

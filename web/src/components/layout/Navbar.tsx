@@ -47,7 +47,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#inicio" className="flex items-center gap-3 shrink-0">
               <Image
-                src="/logos/logo-bordo-text.jpeg"
+                src="/logos/logo_oficial.png"
                 alt="Ateneo Croata"
                 width={160}
                 height={60}
@@ -134,7 +134,7 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between h-18 px-6">
               <Image
-                src="/logos/logo-bordo-text.jpeg"
+                src="/logos/logo_oficial.png"
                 alt="Ateneo Croata"
                 width={160}
                 height={60}
