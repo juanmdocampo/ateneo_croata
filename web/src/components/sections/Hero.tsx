@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-end pb-20 md:pb-28 overflow-hidden"
+      className="relative min-h-screen flex items-end pt-24 pb-20 md:pt-0 md:pb-28 overflow-hidden"
     >
       {/* Background: editorial gradient evoking the Adriatic coast */}
       <div

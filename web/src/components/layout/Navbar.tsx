@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 h-18 md:h-20 overflow-hidden transition-all duration-500 ${
           scrolled
             ? 'bg-warm-white/95 backdrop-blur-md shadow-[0_1px_0_0_rgba(61,61,61,0.08)]'
             : 'bg-transparent'
@@ -43,7 +43,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-18 md:h-20">
+          <div className="flex items-center justify-between h-18 md:h-20 overflow-hidden">
             {/* Logo */}
             <a href="#inicio" className="flex items-center gap-3 shrink-0">
               <Image
@@ -126,7 +126,7 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-40 bg-warm-white flex flex-col"
+            className="fixed inset-0 z-[60] bg-warm-white flex flex-col"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -140,6 +140,16 @@ export default function Navbar() {
                 height={60}
                 className="h-16 w-auto object-contain"
               />
+                            <button
+                onClick={() => setMenuOpen(false)}
+                className="flex flex-col gap-1.5 p-2 text-text"
+                aria-label="Cerrar menú"
+              >
+                <motion.span className="block w-6 h-px bg-current" animate={{ rotate: 45, y: 5 }} />
+                <motion.span className="block w-6 h-px bg-current" animate={{ opacity: 0 }} />
+                <motion.span className="block w-6 h-px bg-current" animate={{ rotate: -45, y: -5 }} />
+              </button>
+
             </div>
             <nav className="flex flex-col px-8 pt-8 gap-1 flex-1">
               {NAV_LINKS.map(({ key, href }, i) => (
