@@ -9,9 +9,8 @@
     "lang": "HR"
   },
   "hero": {
-    "title": "QUÉ ES ATENEO",
-    "subtitle": "Una comunidad\ncultural abierta",
-    "text": "Ateneo Croata es una asociación civil y plataforma cultural contemporánea nacida en Rosario, Argentina.\n\nDesarrollamos actividades, proyectos y redes que conectan personas con Croacia desde un lugar actual, participativo y cercano.\n\nNo hace falta ser croata para ser parte. Puede sumarse cualquier persona con interés, cariño o curiosidad por Croacia y su cultura.",
+    "title": "Sobre Nosotros",
+    "text": "Ateneo Croata es una plataforma cultural contemporánea nacida en Rosario, Argentina.\n\nDesarrollamos actividades, proyectos y redes que conectan personas con Croacia desde un lugar actual, participativo y cercano.",
     "cta1": "Explorar programas",
     "cta2": "Hacete socio"
   },
@@ -44,7 +43,7 @@
   },
   "programs": {
     "eyebrow": "Nuestros programas",
-    "title": "Formas de encontrarnos con Croacia",
+    "title": "Nuestros programas",
     "cards": [
       {
         "id": "kavu",
@@ -74,7 +73,7 @@
   },
   "support": {
     "eyebrow": "Red de apoyo",
-    "title": "Acompañamos proyectos, personas e instituciones",
+    "title": "Acompañamos y difundimos proyectos, personas e instituciones",
     "text": "Creemos en compartir herramientas y tender puentes.",
     "list": [
       "Migrantes",

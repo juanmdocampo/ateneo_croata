@@ -12,7 +12,7 @@ export default function Support() {
   return (
     <section id="recursos" className="bg-warm-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-0">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-0 lg:items-center">
 
           {/* Left */}
           <div className="lg:col-span-5 lg:pr-16">
@@ -51,26 +51,6 @@ export default function Support() {
 
           {/* Right */}
           <div className="lg:col-span-7 lg:border-l lg:border-warm-gray-2 lg:pl-16">
-            {/* List */}
-            <motion.ul
-              className="grid grid-cols-2 gap-3 mb-10"
-              variants={fadeUp}
-              custom={0}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              {t.support.list.map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-center gap-3 font-sans text-sm text-text py-3 border-b border-warm-gray-2"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-bordo shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </motion.ul>
-
             <motion.div
               className="flex flex-col gap-4"
               variants={fadeUp}

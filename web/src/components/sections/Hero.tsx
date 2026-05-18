@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-end pt-24 pb-20 md:pt-0 md:pb-28 overflow-hidden"
+      className="relative min-h-[45vh] md:min-h-[75vh] flex items-end pt-24 pb-20 md:pt-0 md:pb-28 overflow-hidden"
     >
       {/* Background: editorial gradient evoking the Adriatic coast */}
       <div
@@ -51,22 +51,11 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12">
         <div className="max-w-2xl">
-          {/* Eyebrow */}
-          <motion.p
-            className="font-sans text-xs tracking-[0.25em] uppercase text-white/40 mb-8"
-            custom={0}
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-          >
-            Rosario, Argentina
-          </motion.p>
-
           {/* Title */}
           <motion.h1
             className="font-serif font-light text-white leading-[0.95] mb-10"
             style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}
-            custom={1}
+            custom={0}
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -76,22 +65,10 @@ export default function Hero() {
             ))}
           </motion.h1>
 
-          {/* Subtitle */}
-          <motion.p
-            className="font-serif italic text-white/70 mb-6 leading-relaxed"
-            style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)' }}
-            custom={2}
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-          >
-            {t.hero.subtitle}
-          </motion.p>
-
           {/* Body text */}
           <motion.div
             className="font-sans text-sm text-white/55 leading-relaxed mb-10 max-w-md space-y-4"
-            custom={3}
+            custom={1}
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -104,7 +81,7 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             className="flex flex-wrap gap-4"
-            custom={4}
+            custom={2}
             variants={fadeUp}
             initial="hidden"
             animate="visible"

@@ -12,7 +12,7 @@ const NAV_LINKS = [
 ]
 
 export default function Footer() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
   return (
     <footer id="contacto" className="bg-[#1a1a1a] text-white/80">
@@ -53,7 +53,7 @@ export default function Footer() {
               {t.footer.nav_title}
             </h4>
             <ul className="flex flex-col gap-3">
-              {NAV_LINKS.map(({ key, href }) => (
+              {NAV_LINKS.filter(({ key }) => !(key === 'croatizar' && lang === 'hr')).map(({ key, href }) => (
                 <li key={key}>
                   <a
                     href={href}

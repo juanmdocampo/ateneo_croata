@@ -9,9 +9,8 @@
     "lang": "ES"
   },
   "hero": {
-    "title": "ŠTO JE ATENEO",
-    "subtitle": "Otvorena kulturna\nzajednica",
-    "text": "Ateneo Croata je civilna udruga i suvremena kulturna platforma nastala u Rosariju, Argentina.\n\nRazvijamo aktivnosti, projekte i mreže koje povezuju ljude s Hrvatskom na aktualan, participativan i blizak način.\n\nNije potrebno biti Hrvat da bi se pridružili. Može se pridružiti svaka osoba s interesom, ljubavlju ili radoznalošću prema Hrvatskoj i njenoj kulturi.",
+    "title": "O Nama",
+    "text": "Ateneo Croata je suvremena kulturna platforma nastala u Rosariju, Argentina.\n\nRazvijamo aktivnosti, projekte i mreže koje povezuju ljude s Hrvatskom na aktualan, participativan i blizak način.",
     "cta1": "Istražite programe",
     "cta2": "Postani član"
   },
@@ -44,7 +43,7 @@
   },
   "programs": {
     "eyebrow": "Naši programi",
-    "title": "Načini susreta s Hrvatskom",
+    "title": "Naši programi",
     "cards": [
       {
         "id": "kavu",

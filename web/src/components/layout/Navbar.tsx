@@ -14,7 +14,7 @@ const NAV_LINKS = [
 ]
 
 export default function Navbar() {
-  const { t, toggleLang } = useLanguage()
+  const { t, lang, toggleLang } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -58,7 +58,7 @@ export default function Navbar() {
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-8">
-              {NAV_LINKS.map(({ key, href }) => (
+              {NAV_LINKS.filter(({ key }) => !(key === 'croatizar' && lang === 'hr')).map(({ key, href }) => (
                 <a
                   key={key}
                   href={href}
@@ -152,7 +152,7 @@ export default function Navbar() {
 
             </div>
             <nav className="flex flex-col px-8 pt-8 gap-1 flex-1">
-              {NAV_LINKS.map(({ key, href }, i) => (
+              {NAV_LINKS.filter(({ key }) => !(key === 'croatizar' && lang === 'hr')).map(({ key, href }, i) => (
                 <motion.a
                   key={key}
                   href={href}

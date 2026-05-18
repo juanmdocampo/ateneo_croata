@@ -33,7 +33,7 @@ export default function Programs() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 lg:mb-16">
           <div>
-            <motion.p
+ {/*            <motion.p
               className="font-sans text-xs tracking-[0.2em] uppercase text-bordo mb-4"
               variants={fadeUp}
               custom={0}
@@ -42,7 +42,7 @@ export default function Programs() {
               viewport={{ once: true }}
             >
               {t.programs.eyebrow}
-            </motion.p>
+            </motion.p> */}
             <motion.h2
               className="font-serif font-light text-text leading-[1.1]"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
