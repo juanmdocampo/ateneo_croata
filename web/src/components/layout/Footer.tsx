@@ -22,11 +22,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col gap-5">
             <Image
-              src="/logos/logo-white-dark.jpeg"
+              src="/logos/logo_oficial.png"
               alt="Ateneo Croata"
               width={180}
               height={70}
-              className="h-12 w-auto object-contain brightness-0 invert opacity-90"
+              className="h-30 w-auto object-contain opacity-90"
             />
             <p className="font-sans text-sm text-white/50 leading-relaxed max-w-xs">
               {t.footer.tagline}
