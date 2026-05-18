@@ -1,5 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import Hero from '@/components/sections/Hero'
 import IntroDictionary from '@/components/sections/IntroDictionary'
 import About from '@/components/sections/About'
@@ -26,6 +27,7 @@ export default function Home() {
         <Partners />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   )
 }
