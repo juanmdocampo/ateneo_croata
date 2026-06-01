@@ -47,11 +47,11 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#inicio" className="flex items-center gap-3 shrink-0">
               <Image
-                src="/logos/logo_oficial.png"
+                src={scrolled ? '/logos/logo_oficial.png' : '/logos/logo_oficial_blanco.png'}
                 alt="Ateneo Croata"
                 width={160}
                 height={60}
-                className="h-32 w-auto object-contain"
+                className="h-32 w-auto object-contain transition-opacity duration-300"
                 priority
               />
             </a>
