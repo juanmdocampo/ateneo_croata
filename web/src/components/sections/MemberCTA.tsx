@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -10,19 +11,17 @@ export default function MemberCTA() {
     <section
       id="socio"
       className="relative py-28 lg:py-36 overflow-hidden"
-      style={{
-        background:
-          'linear-gradient(135deg, #5a1a26 0%, #7a2e3b 50%, #6e2d3b 100%)',
-      }}
     >
-      {/* Decorative background element */}
-      <div
-        className="absolute right-0 top-0 bottom-0 w-1/2 opacity-10"
-        style={{
-          backgroundImage:
-            'radial-gradient(ellipse 60% 80% at 100% 50%, rgba(255,255,255,0.3) 0%, transparent 70%)',
-        }}
+      {/* Background image */}
+      <Image
+        src="/img/monumento_rosario_bandera.png"
+        alt=""
+        fill
+        className="object-cover object-center"
       />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(90,26,38,0.88) 0%, rgba(122,46,59,0.82) 50%, rgba(110,45,59,0.88) 100%)' }} />
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{

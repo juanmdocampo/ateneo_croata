@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/context/LanguageContext'
 import { fadeUpVariants } from '@/lib/animations'
@@ -12,9 +13,19 @@ export default function IntroDictionary() {
   if (lang !== 'es') return null
 
   return (
-    <section id="croatizar" className="bg-warm-white">
+    <section id="croatizar" className="relative overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/img/Croatizar.jpg"
+        alt=""
+        fill
+        className="object-cover object-center"
+      />
+      {/* Light overlay to keep text readable */}
+      <div className="absolute inset-0 bg-warm-white/90" />
+
       {/* Dictionary block */}
-      <div className="bg-warm-white border-t border-warm-gray-2">
+      <div className="relative z-10 border-t border-warm-gray-2/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
           <div>
 

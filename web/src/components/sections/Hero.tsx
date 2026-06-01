@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/context/LanguageContext'
 import { fadeUpVariantsLarge } from '@/lib/animations'
@@ -14,28 +15,22 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-[45vh] md:min-h-[75vh] flex items-end pt-24 pb-20 md:pt-0 md:pb-28 overflow-hidden"
     >
-      {/* Background: editorial gradient evoking the Adriatic coast */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            'linear-gradient(160deg, #1a0f12 0%, #2a1520 30%, #3d2030 55%, #7a2e3b 100%)',
-        }}
+      {/* Background image */}
+      <Image
+        src="/img/monumento_rosario_gente.jpg"
+        alt=""
+        fill
+        className="object-cover object-center"
+        priority
       />
 
-      {/* Atmospheric overlay layers */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            'radial-gradient(ellipse 80% 50% at 70% 30%, rgba(255,220,180,0.15) 0%, transparent 70%)',
-        }}
-      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg, rgba(26,15,18,0.85) 0%, rgba(42,21,32,0.8) 40%, rgba(122,46,59,0.7) 100%)' }} />
+
+      {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-1/3"
-        style={{
-          background: 'linear-gradient(to top, rgba(26,15,18,0.6) 0%, transparent 100%)',
-        }}
+        style={{ background: 'linear-gradient(to top, rgba(26,15,18,0.6) 0%, transparent 100%)' }}
       />
 
       {/* Subtle texture noise */}
