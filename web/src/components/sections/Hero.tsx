@@ -15,23 +15,28 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-[45vh] md:min-h-[75vh] flex items-end pt-24 pb-20 md:pt-0 md:pb-28 overflow-hidden"
     >
-      {/* Background image */}
-      <Image
-        src="/img/monumento_rosario_gente.jpg"
-        alt=""
-        fill
-        className="object-cover object-center"
-        priority
+      {/* Background gradient */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(160deg, #1a0f12 0%, #2a1520 30%, #3d2030 55%, #7a2e3b 100%)' }}
       />
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg, rgba(26,15,18,0.85) 0%, rgba(42,21,32,0.8) 40%, rgba(122,46,59,0.7) 100%)' }} />
 
       {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-1/3"
         style={{ background: 'linear-gradient(to top, rgba(26,15,18,0.6) 0%, transparent 100%)' }}
       />
+
+      {/* Circle image — desktop right side */}
+      <div className="hidden md:block absolute right-16 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full overflow-hidden opacity-60 ring-1 ring-white/20 z-10">
+        <Image
+          src="/img/monumento_rosario_gente.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+      </div>
 
       {/* Subtle texture noise */}
       <div
@@ -46,19 +51,20 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12">
         <div className="max-w-2xl">
-          {/* Title */}
-          <motion.h1
-            className="font-serif font-light text-white leading-[0.95] mb-10"
-            style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}
-            custom={0}
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
-          >
-            {t.hero.title.split('\n').map((line, i) => (
-              <span key={i} className="block">{line}</span>
-            ))}
-          </motion.h1>
+          {/* Title + mobile circle */}
+          <motion.div className="flex items-center gap-4 mb-10" custom={0} variants={fadeUp} initial="hidden" animate="visible">
+            <h1
+              className="font-serif font-light text-white leading-[0.95]"
+              style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}
+            >
+              {t.hero.title.split('\n').map((line, i) => (
+                <span key={i} className="block">{line}</span>
+              ))}
+            </h1>
+            <div className="md:hidden shrink-0 w-20 h-20 rounded-full overflow-hidden opacity-70 ring-1 ring-white/20">
+              <Image src="/img/monumento_rosario_gente.jpg" alt="" width={80} height={80} className="object-cover w-full h-full" />
+            </div>
+          </motion.div>
 
           {/* Body text */}
           <motion.div

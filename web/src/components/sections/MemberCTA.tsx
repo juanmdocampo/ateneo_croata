@@ -12,16 +12,18 @@ export default function MemberCTA() {
       id="socio"
       className="relative py-28 lg:py-36 overflow-hidden"
     >
-      {/* Background image */}
-      <Image
-        src="/img/monumento_rosario_bandera.png"
-        alt=""
-        fill
-        className="object-cover object-center"
-      />
+      {/* Background gradient */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #5a1a26 0%, #7a2e3b 50%, #6e2d3b 100%)' }} />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(90,26,38,0.88) 0%, rgba(122,46,59,0.82) 50%, rgba(110,45,59,0.88) 100%)' }} />
+      {/* Circle image — desktop right side */}
+      <div className="hidden md:block absolute right-16 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full overflow-hidden opacity-50 ring-1 ring-white/20 z-10">
+        <Image
+          src="/img/monumento_rosario_bandera.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+        />
+      </div>
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -43,16 +45,23 @@ export default function MemberCTA() {
             {t.member.eyebrow}
           </motion.p>
 
-          <motion.h2
-            className="font-serif font-light text-white leading-[1.05] mb-8"
-            style={{ fontSize: 'clamp(2.2rem, 5vw, 4rem)' }}
+          <motion.div
+            className="flex items-center gap-4 mb-8"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            {t.member.title}
-          </motion.h2>
+            <h2
+              className="font-serif font-light text-white leading-[1.05]"
+              style={{ fontSize: 'clamp(2.2rem, 5vw, 4rem)' }}
+            >
+              {t.member.title}
+            </h2>
+            <div className="md:hidden shrink-0 w-20 h-20 rounded-full overflow-hidden opacity-60 ring-1 ring-white/20">
+              <Image src="/img/monumento_rosario_bandera.png" alt="" width={80} height={80} className="object-cover w-full h-full" />
+            </div>
+          </motion.div>
 
           <motion.p
             className="font-sans text-base text-white/60 leading-relaxed mb-10 max-w-lg"
