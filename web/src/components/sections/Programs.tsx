@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
-import { motion, AnimatePresence, useInView } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '@/context/LanguageContext'
 import { fadeUpVariants } from '@/lib/animations'
 
@@ -21,10 +21,44 @@ const PROGRAM_ICONS = [
 ]
 
 const PROGRAM_IMAGES: Record<string, string[]> = {
-  kavu:  ['/img/kavu/kavu.jpeg'],
-  skola: ['/img/skola/mala_skola.png'],
-  vino:  ['/img/vino/Rujnovino.jpg'],
-  sveti: ['/img/sveti/Svisveti.jpg'],
+  kavu: [
+    '/img/kavu/kavu.jpeg',
+    '/img/kavu/13b4939b-a9e1-4939-a9b8-91b5140b198e.JPG',
+    '/img/kavu/IMG-20230526-WA0015.jpg',
+    '/img/kavu/IMG-20231216-WA0026.jpg',
+    '/img/kavu/IMG-20240806-WA0182.jpg',
+    '/img/kavu/IMG-20240806-WA0183.jpg',
+    '/img/kavu/IMG_9618.JPG',
+  ],
+  skola: [
+    '/img/skola/mala_skola.png',
+    '/img/skola/IMG_2406.jpg',
+    '/img/skola/MALASKOLA(1).jpg',
+    '/img/skola/MALASKOLA(2).jpg',
+    '/img/skola/MALASKOLA(3).jpg',
+    '/img/skola/MALASKOLA.jpeg',
+    '/img/skola/MALASKOLA.jpg',
+  ],
+  vino: [
+    '/img/vino/Rujnovino.jpg',
+    '/img/vino/DSC_3032.JPG',
+    '/img/vino/F0A09D4B-D997-405A-A4E3-EE7883196AA8.JPG',
+    '/img/vino/IMG-20250309-WA0013.jpg',
+    '/img/vino/WEB%20IMG-20241019-WA0000.jpg',
+    '/img/vino/WEB%20IMG-20241019-WA0005.jpg',
+    '/img/vino/WEB%20IMG-20241019-WA0008.jpg',
+    '/img/vino/WEB%20IMG-20241019-WA0018.jpg',
+    '/img/vino/WEB%20Rujnovino.jpg',
+  ],
+  sveti: [
+    '/img/sveti/Svisveti.jpg',
+    '/img/sveti/IMG-20241027-WA0011.jpg',
+    '/img/sveti/IMG-20241027-WA0022.jpg',
+    '/img/sveti/IMG-20241027-WA0026.jpg',
+    '/img/sveti/IMG-20251104-WA0012.jpg',
+    '/img/sveti/WEB%20IMG-20241027-WA0020.jpg',
+    '/img/sveti/e9f4c63f-4252-48f3-91c7-397a0fdcb1ce.JPG',
+  ],
 }
 
 const fadeUp = fadeUpVariants()
@@ -36,14 +70,6 @@ function ProgramCard({ card, index }: { card: Card; index: number }) {
   const slides: (string | null)[] = [null, ...images]
   const total = slides.length
   const [current, setCurrent] = useState(0)
-  const ref = useRef<HTMLElement>(null)
-  const inView = useInView(ref, { margin: '-10% 0px -10% 0px' })
-
-  useEffect(() => {
-    if (total <= 1 || !inView) return
-    const timer = setInterval(() => setCurrent(prev => (prev + 1) % total), 4000)
-    return () => clearInterval(timer)
-  }, [total, inView])
 
   const prev = () => setCurrent(p => (p - 1 + total) % total)
   const next = () => setCurrent(p => (p + 1) % total)
@@ -55,7 +81,6 @@ function ProgramCard({ card, index }: { card: Card; index: number }) {
 
   return (
     <motion.article
-      ref={ref}
       className="group relative rounded-2xl overflow-hidden cursor-default"
       style={{ minHeight: '380px' }}
       variants={fadeUp}
@@ -108,6 +133,30 @@ function ProgramCard({ card, index }: { card: Card; index: number }) {
           {card.text}
         </p>
       </div>
+
+      {/* Arrows */}
+      {total > 1 && (
+        <>
+          <button
+            onClick={e => { e.stopPropagation(); prev() }}
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/30 hover:bg-black/50 flex items-center justify-center text-white transition-colors duration-200"
+            aria-label="anterior"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button
+            onClick={e => { e.stopPropagation(); next() }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/30 hover:bg-black/50 flex items-center justify-center text-white transition-colors duration-200"
+            aria-label="siguiente"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </>
+      )}
 
       {/* Dots */}
       {total > 1 && (
