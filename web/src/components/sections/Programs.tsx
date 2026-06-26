@@ -115,24 +115,28 @@ function ProgramCard({ card, index }: { card: Card; index: number }) {
         )}
       </AnimatePresence>
 
-      {/* Hover overlay */}
-      <div className="absolute inset-0 bg-bordo/0 group-hover:bg-bordo/10 transition-colors duration-500" />
+      {/* Hover overlay — only on content slide */}
+      {current === 0 && (
+        <div className="absolute inset-0 bg-bordo/0 group-hover:bg-bordo/10 transition-colors duration-500" />
+      )}
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-10" style={{ minHeight: '380px' }}>
-        <div className="mb-5 w-10 h-10 rounded-full bg-bordo/80 flex items-center justify-center text-white">
-          {PROGRAM_ICONS[index]}
+      {/* Content — slide 0 only */}
+      {current === 0 && (
+        <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-10" style={{ minHeight: '380px' }}>
+          <div className="mb-5 w-10 h-10 rounded-full bg-bordo/80 flex items-center justify-center text-white">
+            {PROGRAM_ICONS[index]}
+          </div>
+          <h3 className="font-serif text-white mb-2 leading-tight" style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)' }}>
+            {card.name}
+          </h3>
+          <p className="font-sans text-sm text-white/70 leading-relaxed md:max-h-0 md:overflow-hidden md:group-hover:max-h-40 transition-all duration-500">
+            {card.text}
+          </p>
+          <p className="font-sans text-sm text-white/70 leading-relaxed md:hidden mt-3">
+            {card.text}
+          </p>
         </div>
-        <h3 className="font-serif text-white mb-2 leading-tight" style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)' }}>
-          {card.name}
-        </h3>
-        <p className="font-sans text-sm text-white/70 leading-relaxed md:max-h-0 md:overflow-hidden md:group-hover:max-h-40 transition-all duration-500">
-          {card.text}
-        </p>
-        <p className="font-sans text-sm text-white/70 leading-relaxed md:hidden mt-3">
-          {card.text}
-        </p>
-      </div>
+      )}
 
       {/* Arrows */}
       {total > 1 && (
