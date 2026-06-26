@@ -13,7 +13,11 @@
       "Read(//c/c/Users/juanmanuel.docampo/Documents/**)",
       "Bash(npx create-next-app@latest web --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git --yes)",
       "Bash(npm install *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(mkdir kavu *)",
+      "Bash(mv Rujnovino.jpg vino/)",
+      "Bash(mv Svisveti.jpg sveti/)",
+      "Bash(mv mala_skola.png skola/)"
     ]
   }
 }

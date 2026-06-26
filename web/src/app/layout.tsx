@@ -95,8 +95,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [{ url: '/favicon.ico' }],
-    apple: [{ url: '/logos/logo-icon-bordo.jpeg', sizes: '180x180' }],
+    icon: [{ url: '/logos/logo_oficial.png', type: 'image/png' }],
+    apple: [{ url: '/logos/logo_oficial.png', sizes: '180x180', type: 'image/png' }],
   },
   manifest: '/manifest.json',
 }
