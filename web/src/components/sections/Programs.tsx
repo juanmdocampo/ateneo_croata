@@ -109,7 +109,7 @@ function ProgramCard({ card, index }: { card: Card; index: number }) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Image src={slides[current] as string} alt="" fill className="object-cover object-center" />
+            <Image src={slides[current] as string} alt="" fill sizes="(max-width: 640px) 100vw, 50vw" quality={70} className="object-cover object-center" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 60%, transparent 100%)' }} />
           </motion.div>
         )}

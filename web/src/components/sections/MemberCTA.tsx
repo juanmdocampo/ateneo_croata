@@ -47,7 +47,7 @@ export default function MemberCTA() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Image src={slides[current] as string} alt="" fill className="object-contain object-center" />
+            <Image src={slides[current] as string} alt="" fill sizes="100vw" quality={70} className="object-contain object-center" />
             <div className="absolute inset-0 bg-black/20" />
           </motion.div>
         )}
@@ -58,7 +58,7 @@ export default function MemberCTA() {
         <>
           {/* Circle image — desktop */}
           <div className="hidden md:block absolute right-16 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full overflow-hidden opacity-50 ring-1 ring-white/20 z-10">
-            <Image src="/img/monumento_rosario_bandera.png" alt="" fill className="object-cover object-center" />
+            <Image src="/img/monumento_rosario_bandera.png" alt="" fill sizes="320px" quality={75} className="object-cover object-center" />
           </div>
 
           <div
