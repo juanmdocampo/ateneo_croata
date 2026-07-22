@@ -9,7 +9,10 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp'],
+    minimumCacheTTL: 604800,
+    deviceSizes: [640, 1080, 1920],
+    imageSizes: [128, 384, 640],
   },
   async headers() {
     return [
